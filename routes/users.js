@@ -289,33 +289,6 @@ router.get("/getallnotes", async (req, res) => {
 
 
 
-// router.get("/notes/:notesId", async (req, res) => {
-//   console.log("kik")
-//   try {
-//       const userId = req.params.userId;
-//       console.log(userId);
-
-//       const user = await detailsModel.findById(userId);
-//       console.log(user)
-
-//       if (user) {
-//           res.status(200).json(user);
-//       } else {
-//           res.status(404).json({
-//               message: "User not found",
-//               statusCode: 404,
-//           });
-//       }
-//   } catch (error) {
-//       res.status(500).json({
-//           error,
-//           message: "Error fetching user details",
-//           statusCode: 500,
-//       });
-//   }
-// });
-
-
 router.get("/teacher/:teacherId", async (req, res) => {
   console.log("uhuh")
   try {
